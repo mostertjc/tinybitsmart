@@ -7,11 +7,12 @@ basic.forever(function () {
     }
     basic.pause(500)
     for (let i = 0; i <= 255; i++) {
+        Tinybit.CarCtrlSpeed(Tinybit.CarState.Car_Right, i)
         Tinybit.CarCtrlSpeed(Tinybit.CarState.Car_Left, i)
     }
     basic.pause(2000)
     for (let i = 0; i <= 255; i++) {
-        Tinybit.CarCtrlSpeed(Tinybit.CarState.Car_Right, i)
+    	
     }
     basic.pause(2000)
     for (let i = 0; i <= 255; i++) {
